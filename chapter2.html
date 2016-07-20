@@ -66,6 +66,12 @@
         color: white;
         font: 100%/1 sans-serif;
     }
+    .bg-origin{
+        background-origin:content-box;
+    }
+    .bg-position-calc{
+        background-position: calc(100% - 20px) calc(100% - 10px);
+    }
 	</style>
 </head>
 <body>
@@ -85,8 +91,14 @@
         outline产生虚线内描边
     </div>
     <div class="clr"></div>
-    <div class="bg-position">
+    <div class="box bg-position">
         背景定位 background-position
+    </div>
+    <div class="box bg-position bg-origin">
+        背景定位 background-origin
+    </div>
+    <div class="box bg-position bg-position-calc">
+        背景定位 background-position-calc
     </div>
 </body>
 </html>

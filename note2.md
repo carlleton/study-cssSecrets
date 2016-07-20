@@ -18,5 +18,12 @@ PS:默认背景`background-clip:border-box;`
 1) 使用background-position扩展语法
 `background-position:right 20px bottom 10px;`
 为了兼容可以在background中使用一个回退方案：将之前的定位写在background中
+
 2) 使用background-origin方案
-在给背景图片设置距离某个角的偏移量时，有一种情况极其常见：偏移量与容器的内边距一致。这时候可以使用`background-origin`自动跟着设定的内边距走，不用另外声明偏移量的值。
+在给背景图片设置距离某个角的偏移量时，有一种情况极其常见：偏移量与容器的内边距一致。这时 候可以使用`background-origin`自动跟着设定的内边距走，不用另外声明偏移量的值。
+默认情况下，`background-position`是以padding box为准的，可以设置`background-origin`为`content-box`，这样background-position的left top是以内容区的边缘作为基准。
+
+3) 使用calc()方案
+在设置背景的时候，可以使用calc()完成如`100%-20px`这样的偏移量
+`background-position:calc(100% - 20px) calc(100% - 10px);`
+*注意：在-和+运算符的两侧各加一个空白符，否则会产生解析错误！*
