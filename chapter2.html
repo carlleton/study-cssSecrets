@@ -72,15 +72,26 @@
     .bg-position-calc{
         background-position: calc(100% - 20px) calc(100% - 10px);
     }
+    .box-border-radius-zhijiao{
+        background:tan;
+        border-radius:.8em;
+        padding:1em;
+        box-shadow:0 0 0 .6em #655;
+        outline:.6em solid #655;
+    }
 	</style>
 </head>
 <body>
+    <h3>半透明边框</h3>
 	<div class="trans-border">
 		<div class="white">这是一个白色半透明边框——默认</div>
 		<div class="whitetrans">这是一个白色半透明边框</div>
 		<div class="trans">这是一个红色半透明边框</div>
 		<div>这是一个红色半透明边框——默认</div>
 	</div>
+    
+    
+    <h3>多重边框</h3>
     <div class="box border-shadow">
         多重投影背景box-shadow
     </div>
@@ -91,6 +102,9 @@
         outline产生虚线内描边
     </div>
     <div class="clr"></div>
+    
+    
+    <h3>灵活的背景定位</h3>
     <div class="box bg-position">
         背景定位 background-position
     </div>
@@ -99,6 +113,11 @@
     </div>
     <div class="box bg-position bg-position-calc">
         背景定位 background-position-calc
+    </div>
+    <div class="clr"></div>
+    
+    <div class="box-border-radius-zhijiao">
+        边框内圆角
     </div>
 </body>
 </html>
